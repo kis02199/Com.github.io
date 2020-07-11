@@ -1,0 +1,236 @@
+
+
+html, body {
+	width:100%;
+	height:100%;}
+
+.dbody{
+	width:100%;
+	height:100%;
+	text-align:center;
+	/*overflow-y:scroll;*/
+	
+}
+
+.gallerylist {
+	max-width:1200px;
+	width:90%;
+	margin:0 auto;
+	padding-top:20%;
+}
+
+ul {font-size:0;}
+
+ul > li {
+	display:inline-block;
+	vertical-align:top;
+	width:20%;
+}
+
+/*
+ul > li:before {
+	content:"";
+	display: block;
+	padding-bottom : 100%;
+}
+*/
+
+ul > li > a {
+	display:block;
+	width:auto;
+	text-decoration:: none;
+	margin:0px;
+}
+
+ul > li > a .screen {
+	margin:5px;
+	position:relative;
+	border-radius:20px;
+	overflow:hidden;
+}
+
+ul > li > a .screen .top {
+	position:absolute;
+	bottom : 150%;
+	left: 15px;
+	z-index:2;
+	color:#fff;
+	font-size:24px;
+	font-weight:900;
+	transition:all .35s;
+}
+
+ul > li > a .screen .bottom {
+	position:absolute;
+	top : 150%;
+	left: 17px;
+	z-index:2;
+	color:#fff;
+	font-size:15px;
+	transition:all .35s;
+}
+
+ul > li > a .screen::after {
+	content:'';
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	padding-bottom : 150%;
+	background:rgba(0,0,0,.5);
+	z-index:1;
+	opacity:0;
+	transition:all .35s;
+}
+ul > li > a:hover .screen::after {
+	opacity:1;
+}
+
+ul > li > a .screen img {
+	position:relative;
+	width:100%;
+	/*height:100%;*/
+}
+
+ul > li > a .screen .bk {
+	width:10px;
+	position:absolute;
+	top : 100%;
+	z-index:2;
+}
+
+/*
+ul > li > a h3 {
+	font-size:14px;
+	text-align:center;
+	padding:20px;
+	color:#666;
+}
+*/
+ul > li > a:hover .top {bottom:52%;}
+ul > li > a:hover .bottom {top:52%;}
+
+
+.black_overlay{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+
+.white_content {
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 15%;
+	width : auto;
+	height : auto;
+	max-height: 90%;
+	max-width: 70%;	
+    padding: 10px;
+    border: 2px solid #000000;
+    background-color: white;
+    z-index:1002;
+    overflow: auto;
+}
+
+.white_content img {
+	width:auto;
+	height:auto;
+	max-height:100%;
+	max-width:100%;
+}
+
+.white_content a {
+	position:absolute;
+	top:0%;
+	right:0%;
+	trasform:translate(-40%,-40%);
+	padding:20px;
+	background:#dd5347;
+	border-radius:100%;
+	z-index:1;
+	opacity:0.7;
+}
+
+/*
+input[id*="popup"]{
+	display:none;
+}
+input[id*="popup"] + label + div {
+	/*display:none;
+	opacity:0;
+	visibility:hidden;
+	transition:all 0.1s;
+}
+input[id*="popup"]:checked + label + div {
+	/*display:block;
+	opacity:1;
+	visibility:visible;
+	}
+input[id*="popup"] + label {
+	display:inline-block;
+	padding:20px;
+	background:#ffcd41;
+	color:#fff;
+}
+input[id*="popup"] + label + div {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:100;
+}
+input[id*="popup"] + label + div > div {
+	position:absolute;
+	top:30%;
+	left:20%;
+	trasform:translate(-50%,-50%);
+	width:500px;
+	height:300px;
+	background:#fff;
+	z-index:2;
+}
+input[id*="popup"] + label + div > div > label {
+	position:absolute;
+	top:0%;
+	right:0%;
+	trasform:translate(-40%,-40%);
+	padding:20px;
+	background:#dd5347;
+	border-radius:100%;
+	z-index:1;
+}
+input[id*="popup"] + label + div > div > img {
+	width:100%;
+}
+input[id*="popup"] + label + div > label {
+	position:absolute;
+	top:0%;
+	right:0%;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,.8);
+	z-index:1;
+}
+*/
+
+
+
+
+
+
+
+
+
+
