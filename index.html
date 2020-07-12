@@ -8,22 +8,30 @@
 <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
 <script src="js/lightbox-plus-jquery.min.js"></script>
 <title> PROGRESS >> Grut Fallin Bok %365 \ </title>
+<script type="text/javascript">
+	var hour = function() {
+		var fname ="";
+		var today =new Date();
+		var hh = today.getHours();
+		if(hh>=7 && hh<=17)
+		{
+			fname="black";
+			alert("BLACK");
+		}
+		else
+		{
+			fname="yellow";
+			alert("YELLOW");
+		}
+		
+		document.getElementById("dayknow").style.background-color: fname;
+	}
+</script>
+
 </head>
 
-<body bgcolor='black'>
+<body>
 
-
-<!--
-<input type="checkbox" id="popup">
-<label for="popup"> View </label>
-<div>
-	<div>
-		<img src = "a1.png">
-		<label for="popup"></label>
-	</div>
-	<label for="popup"></label>
-</div>
--->
 
 <script>
 	lightbox.option({
@@ -38,26 +46,69 @@
 	function toggleImg1g(x) {
 		document.getElementById("img").src = "./img/a" + x + ".gif";
 	}
+	var fname ="";
+	var today =new Date();
+	var hh = today.getHours();
+	//alert(hh);
+		
+	if(hh>=7 && hh<=19)
+		{
+			document.body.style.background = "url('day.png') no-repeat center center fixed";
+			//alert("BLACK");
+		}
+		else
+		{
+			document.body.style.background = "url('night.png') no-repeat center center fixed";
+			//alert("YELLOW");
+		}
+	
 </script>
 
+<!--
+<script type="text/javascript">
+	document.body.style.background = "url('day.png') no-repeat center center fixed";
+	alert("BLACK");
+</script>
+-->
+<!--
+<input type="checkbox" id="popup">
+<label for="popup"> View </label>
+<div>
+	<div>
+		<img src = "a1.png">
+		<label for="popup"></label>
+	</div>
+	<label for="popup"></label>
+</div>
+-->
 
+<!--
+<div class="dayknow">
+	콩이다
+</div>
+-->
 
 
 
 <div class="dbody">
+
+	<div class = "tat">
+		<a href = "" >
+			<img src = "1stag.png">
+		</a>
+	</div>
 
 <!--
 <div id="light" class="white_content"><img id="img" src = ""> 
 <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"></a></div>
         <div id="fade" class="black_overlay"></div>
 		
-		-->++
-<h1 style="color:green; text-decoration:underline"> 
-GUBOK World! 
-</h1>
-
+		-->
 
 <div class="gallerylist">
+
+	
+
 	<ul>
 		<li>
 			<!--<a href = "javascript:void(0)" onclick = "toggleImg1j(101);document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">-->
@@ -81,8 +132,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a103.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> 22주아압 </div>
-					<div class = "bottom"> 구복주아 </div>
+					<div class = "top"> 22일 </div>
+					<div class = "bottom"> 행복한 구복 </div>
 					<img src = "./timg/a103.png">
 				</div>
 			</a>
@@ -91,7 +142,7 @@ GUBOK World!
 			<a href = "./img/a104.png" data-lightbox="mygallery">
 				<div class = "screen">
 					<div class = "top"> 절대적소년치 </div>
-					<div class = "bottom"> 무당벌레주아 </div>
+					<div class = "bottom"> 무당벌레로 전해지는 </div>
 					<img src = "./timg/a104.png">
 				</div>
 			</a>
@@ -100,7 +151,7 @@ GUBOK World!
 			<a href = "./img/a105.jpg" data-lightbox="mygallery">
 				<div class = "screen">
 					<div class = "top"> 자장가 </div>
-					<div class = "bottom"> 뽀송 </div>
+					<div class = "bottom"> 너의 품에서라면 영원히 </div>
 					<img src = "./timg/a105.png">
 				</div>
 			</a>
@@ -109,7 +160,7 @@ GUBOK World!
 			<a href = "./img/a106.jpg" data-lightbox="mygallery">
 				<div class = "screen">
 					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "bottom"> 옆에 냥이들 귀여워 </div>
 					<img src = "./timg/a106.png">
 				</div>
 			</a>
@@ -117,8 +168,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a107.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 캐쥬얼구복 </div>
+					<div class = "bottom"> 짱귀엽고이쁘고다함 </div>
 					<img src = "./timg/a107.png">
 				</div>
 			</a>
@@ -126,8 +177,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a108.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 낡은기계의자장가 </div>
+					<div class = "bottom"> 세션카드 </div>
 					<img src = "./timg/a108.png">
 				</div>
 			</a>
@@ -135,8 +186,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a109.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 웨딩 구르트&복 </div>
+					<div class = "bottom"> 합작 </div>
 					<img src = "./timg/a109.png">
 				</div>
 			</a>
@@ -144,8 +195,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a110.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 크리스마스 구르트&복 </div>
+					<div class = "bottom"> 합작 </div>
 					<img src = "./timg/a110.png">
 				</div>
 			</a>
@@ -153,8 +204,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a111.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 복이가쫍! </div>
+					<div class = "bottom"> 홀쭉 </div>
 					<img src = "./timg/a111.png">
 				</div>
 			</a>
@@ -162,8 +213,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a112.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> Senorita </div>
+					<div class = "bottom"> 빨강이네여! </div>
 					<img src = "./timg/a112.png">
 				</div>
 			</a>
@@ -171,8 +222,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a113.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 춤추는 복윤 </div>
+					<div class = "bottom"> 주아아압 </div>
 					<img src = "./timg/a113.png">
 				</div>
 			</a>
@@ -180,8 +231,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a114.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 디저트 구르트&복 </div>
+					<div class = "bottom"> 합작<일부> </div>
 					<img src = "./timg/a114.png">
 				</div>
 			</a>
@@ -189,8 +240,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a115.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> TOXIC </div>
+					<div class = "bottom"> 수위에주의! </div>
 					<img src = "./timg/a115.png">
 				</div>
 			</a>
@@ -198,8 +249,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a116.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 할로윈 구르트&복 </div>
+					<div class = "bottom"> 쪼꼬만복 </div>
 					<img src = "./timg/a116.png">
 				</div>
 			</a>
@@ -207,8 +258,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a117.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> GRUT LOVE BOK </div>
+					<div class = "bottom"> BOK LOVE GRUT </div>
 					<img src = "./timg/a117.png">
 				</div>
 			</a>
@@ -216,8 +267,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a118.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 메이드&집사 복윤 </div>
+					<div class = "bottom"> 깜짝SD합작 </div>
 					<img src = "./timg/a118.png">
 				</div>
 			</a>
@@ -225,8 +276,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a119.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 웨딩구복 </div>
+					<div class = "bottom"> 턱시도&드레스 </div>
 					<img src = "./timg/a119.png">
 				</div>
 			</a>
@@ -234,8 +285,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a120.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 군부물 구르트&복 </div>
+					<div class = "bottom"> 직속상관 </div>
 					<img src = "./timg/a120.png">
 				</div>
 			</a>
@@ -243,8 +294,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a121.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 새해복이주아 </div>
+					<div class = "bottom"> 미니구복 </div>
 					<img src = "./timg/a121.png">
 				</div>
 			</a>
@@ -252,8 +303,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a122.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> Celeste 구르트&복 </div>
+					<div class = "bottom"> 제 플레이가 향긋하십니까? </div>
 					<img src = "./timg/a122.png">
 				</div>
 			</a>
@@ -261,8 +312,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a123.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> SD 꽃 구복 </div>
+					<div class = "bottom"> 화관퐁퐁 </div>
 					<img src = "./timg/a123.png">
 				</div>
 			</a>
@@ -270,8 +321,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a124.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> Being Human </div>
+					<div class = "bottom"> -Steven Universe </div>
 					<img src = "./timg/a124.png">
 				</div>
 			</a>
@@ -279,8 +330,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a125.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 복이품에꼬옥 </div>
+					<div class = "bottom"> 들켰나? </div>
 					<img src = "./timg/a125.png">
 				</div>
 			</a>
@@ -288,8 +339,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a126.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 인어AU 구르트&복 </div>
+					<div class = "bottom"> 키스로 영원함을 </div>
 					<img src = "./timg/a126.png">
 				</div>
 			</a>
@@ -297,8 +348,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a127.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 몽환 구복 </div>
+					<div class = "bottom"> 색깔이 이쁘다 </div>
 					<img src = "./timg/a127.png">
 				</div>
 			</a>
@@ -306,8 +357,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a128.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> Red Black tree </div>
+					<div class = "bottom"> 전공공부를 이렇게? </div>
 					<img src = "./timg/a128.png">
 				</div>
 			</a>
@@ -315,8 +366,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a129.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> Red </div>
+					<div class = "bottom"> tree </div>
 					<img src = "./timg/a129.png">
 				</div>
 			</a>
@@ -324,8 +375,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a130.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> Black </div>
+					<div class = "bottom"> tree </div>
 					<img src = "./timg/a130.png">
 				</div>
 			</a>
@@ -333,8 +384,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a131.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 미니 프룻 구복 </div>
+					<div class = "bottom"> 상큼 </div>
 					<img src = "./timg/a131.png">
 				</div>
 			</a>
@@ -342,8 +393,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a132.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 봄 복윤 </div>
+					<div class = "bottom"> 해바라기와 무당벌레 </div>
 					<img src = "./timg/a132.png">
 				</div>
 			</a>
@@ -351,8 +402,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a133.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 위로받기 </div>
+					<div class = "bottom"> 꼬오옥 </div>
 					<img src = "./timg/a133.png">
 				</div>
 			</a>
@@ -360,8 +411,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a134.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 복이한테 </div>
+					<div class = "bottom"> 인형줘야지 </div>
 					<img src = "./timg/a134.png">
 				</div>
 			</a>
@@ -369,8 +420,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a135.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 구르트에게 </div>
+					<div class = "bottom"> 인형받아야지 </div>
 					<img src = "./timg/a135.png">
 				</div>
 			</a>
@@ -378,8 +429,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a136.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 소풍준비 </div>
+					<div class = "bottom"> 김밥념념굿 </div>
 					<img src = "./timg/a136.png">
 				</div>
 			</a>
@@ -387,8 +438,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a137.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 어린이날 구복 </div>
+					<div class = "bottom"> 와기 구복 </div>
 					<img src = "./timg/a137.png">
 				</div>
 			</a>
@@ -396,8 +447,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a138.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 자장가 </div>
+					<div class = "bottom"> 익지않은 사과 </div>
 					<img src = "./timg/a138.png">
 				</div>
 			</a>
@@ -405,8 +456,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a139.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 농담구복 </div>
+					<div class = "bottom"> 쪼아압 </div>
 					<img src = "./timg/a139.png">
 				</div>
 			</a>
@@ -414,8 +465,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a140.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 절대적으로 </div>
+					<div class = "bottom"> 영원과 장례에서 </div>
 					<img src = "./timg/a140.png">
 				</div>
 			</a>
@@ -423,8 +474,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a141.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 메리 구복 </div>
+					<div class = "bottom"> 크리스마스기념 </div>
 					<img src = "./timg/a141.png">
 				</div>
 			</a>
@@ -432,8 +483,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a142.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> FINAL FANTASY XVI </div>
+					<div class = "bottom"> AU 구복 </div>
 					<img src = "./timg/a142.png">
 				</div>
 			</a>
@@ -441,8 +492,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a143.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 자장가 속에 무지개를 </div>
+					<div class = "bottom"> 무지개 속에서 너를 </div>
 					<img src = "./timg/a143.png">
 				</div>
 			</a>
@@ -450,8 +501,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a144.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 피크닉 복윤 </div>
+					<div class = "bottom"> 벚꽃놀이 </div>
 					<img src = "./timg/a144.png">
 				</div>
 			</a>
@@ -459,8 +510,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a145.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 구복애니볼 </div>
+					<div class = "bottom"> 애니멀+볼 </div>
 					<img src = "./timg/a145.png">
 				</div>
 			</a>
@@ -468,8 +519,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a146.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 로즈데이 구복 </div>
+					<div class = "bottom"> 빨강이네여 </div>
 					<img src = "./timg/a146.png">
 				</div>
 			</a>
@@ -477,8 +528,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a147.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 푸짐 애니멀 구복 </div>
+					<div class = "bottom"> 고로롱 </div>
 					<img src = "./timg/a147.png">
 				</div>
 			</a>
@@ -486,8 +537,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a148.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 상징 </div>
+					<div class = "bottom"> 사랑한다는의미 </div>
 					<img src = "./timg/a148.png">
 				</div>
 			</a>
@@ -495,8 +546,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a149.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 하네하네야 </div>
+					<div class = "bottom"> 빗속에서 </div>
 					<img src = "./timg/a149.png">
 				</div>
 			</a>
@@ -504,8 +555,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a150.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 중아압 </div>
+					<div class = "bottom"> 고아압 </div>
 					<img src = "./timg/a150.png">
 				</div>
 			</a>
@@ -513,8 +564,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a151.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 놀이동산 구복패밀리 </div>
+					<div class = "bottom"> 어린이날 </div>
 					<img src = "./timg/a151.png">
 				</div>
 			</a>
@@ -522,8 +573,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a152.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 벚꽃놀이 셀카 </div>
+					<div class = "bottom"> 복윤 </div>
 					<img src = "./timg/a152.png">
 				</div>
 			</a>
@@ -531,8 +582,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a153.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 미니 잠옷 구복 </div>
+					<div class = "bottom"> 낑겨있기 </div>
 					<img src = "./timg/a153.png">
 				</div>
 			</a>
@@ -540,8 +591,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a154.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> M A C A R O N </div>
+					<div class = "bottom"> 뱀파이어AU </div>
 					<img src = "./timg/a154.png">
 				</div>
 			</a>
@@ -549,8 +600,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a155.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 여름 구복 </div>
+					<div class = "bottom"> 하와이안 셔츠 </div>
 					<img src = "./timg/a155.png">
 				</div>
 			</a>
@@ -558,8 +609,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a156.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 뽀뽀하게 해줘! </div>
+					<div class = "bottom"> 세션카드 </div>
 					<img src = "./timg/a156.png">
 				</div>
 			</a>
@@ -567,8 +618,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a157.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 福壽草 </div>
+					<div class = "bottom"> 영원한 사랑 </div>
 					<img src = "./timg/a157.png">
 				</div>
 			</a>
@@ -576,8 +627,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a158.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 絶対的少年値 </div>
+					<div class = "bottom"> 변하지 않는것 </div>
 					<img src = "./timg/a158.png">
 				</div>
 			</a>
@@ -585,8 +636,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a159.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 겨울 복윤 </div>
+					<div class = "bottom"> 따뜻해지는 품 </div>
 					<img src = "./timg/a159.png">
 				</div>
 			</a>
@@ -594,8 +645,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a160.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 미니 데이트 구복 </div>
+					<div class = "bottom"> 둥실 </div>
 					<img src = "./timg/a160.png">
 				</div>
 			</a>
@@ -603,8 +654,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a161.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 로즈데이 </div>
+					<div class = "bottom"> 소소하지만 행복하게 </div>
 					<img src = "./timg/a161.png">
 				</div>
 			</a>
@@ -612,8 +663,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a162.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 구원고AU 구르트&복 </div>
+					<div class = "bottom"> 대놓고손을 </div>
 					<img src = "./timg/a162.png">
 				</div>
 			</a>
@@ -621,8 +672,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a163.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 치명적인오류 </div>
+					<div class = "bottom"> 부숴지는 </div>
 					<img src = "./timg/a163.png">
 				</div>
 			</a>
@@ -630,8 +681,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a164.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 사랑의향취 </div>
+					<div class = "bottom"> 점점 사랑스러워지는 </div>
 					<img src = "./timg/a164.png">
 				</div>
 			</a>
@@ -639,8 +690,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a165.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 근 본 </div>
+					<div class = "bottom"> 수인구복 </div>
 					<img src = "./timg/a165.png">
 				</div>
 			</a>
@@ -648,8 +699,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a166.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 피어오르는 </div>
+					<div class = "bottom"> 사랑이라는 단어 </div>
 					<img src = "./timg/a166.png">
 				</div>
 			</a>
@@ -657,8 +708,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a168.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 햇살윤 </div>
+					<div class = "bottom"> 우와악복 </div>
 					<img src = "./timg/a168.png">
 				</div>
 			</a>
@@ -666,8 +717,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a169.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 기차놀이 </div>
+					<div class = "bottom"> 빽해뺵 </div>
 					<img src = "./timg/a169.png">
 				</div>
 			</a>
@@ -675,8 +726,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a170.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 목욕구복 </div>
+					<div class = "bottom"> 퀼저하로수위조절 </div>
 					<img src = "./timg/a170.png">
 				</div>
 			</a>
@@ -684,8 +735,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a171.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> Re:Verb </div>
+					<div class = "bottom"> What I need is only you </div>
 					<img src = "./timg/a171.png">
 				</div>
 			</a>
@@ -693,8 +744,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a172.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> I'm Blue </div>
+					<div class = "bottom"> Blue World </div>
 					<img src = "./timg/a172.png">
 				</div>
 			</a>
@@ -702,8 +753,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a173.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> Beastars AU </div>
+					<div class = "bottom"> 토끼굹 늑대복 </div>
 					<img src = "./timg/a173.png">
 				</div>
 			</a>
@@ -711,8 +762,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a174.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> A DANCE OF </div>
+					<div class = "bottom"> FIRE AND ICE</div>
 					<img src = "./timg/a174.png">
 				</div>
 			</a>
@@ -720,8 +771,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a175.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> BEAT SAVER </div>
+					<div class = "bottom"> 주아앙 </div>
 					<img src = "./timg/a175.png">
 				</div>
 			</a>
@@ -729,8 +780,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a176.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 주아압 </div>
+					<div class = "bottom"> 주오아앙 </div>
 					<img src = "./timg/a176.png">
 				</div>
 			</a>
@@ -738,8 +789,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a177.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 무자비하게 </div>
+					<div class = "bottom"> 포위당한 </div>
 					<img src = "./timg/a177.png">
 				</div>
 			</a>
@@ -747,8 +798,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a178.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> PIXEL 수인구복 </div>
+					<div class = "bottom"> 꼬옥 </div>
 					<img src = "./timg/a178.png">
 				</div>
 			</a>
@@ -756,8 +807,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a178-2.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 내 개발자가 이렇게 </div>
+					<div class = "bottom"> 귀여울리가 없어 </div>
 					<img src = "./timg/a178-2.png">
 				</div>
 			</a>
@@ -765,8 +816,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a179.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 덩어리 </div>
+					<div class = "bottom"> on 베게 </div>
 					<img src = "./timg/a179.png">
 				</div>
 			</a>
@@ -774,8 +825,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a180.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 잉꼬 구복 </div>
+					<div class = "bottom"> pica-boo </div>
 					<img src = "./timg/a180.png">
 				</div>
 			</a>
@@ -783,8 +834,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a181.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 주와아압 덩어리 </div>
+					<div class = "bottom"> 홀쭉! </div>
 					<img src = "./timg/a181.png">
 				</div>
 			</a>
@@ -792,8 +843,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a182.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 뭔가 바뀐 것같은데 </div>
+					<div class = "bottom"> 아무튼 바뀜 </div>
 					<img src = "./timg/a182.png">
 				</div>
 			</a>
@@ -801,8 +852,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a183.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 구복냥 패밀리 </div>
+					<div class = "bottom"> 댕굴 </div>
 					<img src = "./timg/a183.png">
 				</div>
 			</a>
@@ -810,8 +861,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a184.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 뽁냥이 </div>
+					<div class = "bottom"> 뽕주댕이! </div>
 					<img src = "./timg/a184.png">
 				</div>
 			</a>
@@ -819,8 +870,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a185.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 민트털댕이 </div>
+					<div class = "bottom"> happy 민트털댕이 </div>
 					<img src = "./timg/a185.png">
 				</div>
 			</a>
@@ -828,8 +879,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a186.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 22 데이 </div>
+					<div class = "bottom"> 쭈아압 </div>
 					<img src = "./timg/a186.png">
 				</div>
 			</a>
@@ -837,8 +888,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a186-2.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> ロキ </div>
+					<div class = "bottom"> R O K I </div>
 					<img src = "./timg/a186-2.png">
 				</div>
 			</a>
@@ -846,8 +897,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a187.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 미니복 </div>
+					<div class = "bottom"> 빅구르트 </div>
 					<img src = "./timg/a187.png">
 				</div>
 			</a>
@@ -855,8 +906,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a188.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 쭈 </div>
+					<div class = "bottom"> 압 </div>
 					<img src = "./timg/a188.png">
 				</div>
 			</a>
@@ -864,8 +915,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a189.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 뽀오 </div>
+					<div class = "bottom"> 옵 </div>
 					<img src = "./timg/a189.png">
 				</div>
 			</a>
@@ -873,8 +924,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a190.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 충전복 </div>
+					<div class = "bottom"> 고롱 </div>
 					<img src = "./timg/a190.png">
 				</div>
 			</a>
@@ -882,8 +933,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a191.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 충전구르트 </div>
+					<div class = "bottom"> 노곤 </div>
 					<img src = "./timg/a191.png">
 				</div>
 			</a>
@@ -891,8 +942,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a192.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 쫍! </div>
+					<div class = "bottom"> 홀쭉! </div>
 					<img src = "./timg/a192.png">
 				</div>
 			</a>
@@ -900,8 +951,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a193.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 주책 </div>
+					<div class = "bottom"> 나이가들어서도 </div>
 					<img src = "./timg/a193.png">
 				</div>
 			</a>
@@ -909,8 +960,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a194.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 굳굹 </div>
+					<div class = "bottom"> 굳굹 </div>
 					<img src = "./timg/a194.png">
 				</div>
 			</a>
@@ -918,8 +969,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a195.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 기습뽀뽀 </div>
+					<div class = "bottom"> !!! </div>
 					<img src = "./timg/a195.png">
 				</div>
 			</a>
@@ -927,8 +978,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a196.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> Cheese Burger </div>
+					<div class = "bottom"> Familly </div>
 					<img src = "./timg/a196.png">
 				</div>
 			</a>
@@ -936,8 +987,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a197.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> SD복윤 </div>
+					<div class = "bottom"> 햇살 </div>
 					<img src = "./timg/a197.png">
 				</div>
 			</a>
@@ -945,8 +996,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a198.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 굿굹 굿굹 </div>
+					<div class = "bottom"> 꼬오옥</div>
 					<img src = "./timg/a198.png">
 				</div>
 			</a>
@@ -954,8 +1005,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a199.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 햅삐 </div>
+					<div class = "bottom"> 굹복 </div>
 					<img src = "./timg/a199.png">
 				</div>
 			</a>
@@ -963,8 +1014,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a200.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 품에꼬옥 </div>
+					<div class = "bottom"> 복윤꼬옥 </div>
 					<img src = "./timg/a200.png">
 				</div>
 			</a>
@@ -972,8 +1023,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a201.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 언제라도 행복한 </div>
+					<div class = "bottom"> 새겨진 얼굴에 선만큼 </div>
 					<img src = "./timg/a201.png">
 				</div>
 			</a>
@@ -981,8 +1032,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a202.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 위험한 복윤 </div>
+					<div class = "bottom"> 서로에게 드리운 </div>
 					<img src = "./timg/a202.png">
 				</div>
 			</a>
@@ -990,8 +1041,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a203.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 말랑말랑 </div>
+					<div class = "bottom"> 복토톡굹모찌 </div>
 					<img src = "./timg/a203.png">
 				</div>
 			</a>
@@ -999,8 +1050,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a204.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 모찌 </div>
+					<div class = "bottom"> 념념굿 </div>
 					<img src = "./timg/a204.png">
 				</div>
 			</a>
@@ -1008,8 +1059,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a205.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 뽀~ </div>
+					<div class = "bottom"> 제압당했습니다. </div>
 					<img src = "./timg/a205.png">
 				</div>
 			</a>
@@ -1017,8 +1068,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a206.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 빨강이네여 </div>
+					<div class = "bottom"> 플러팅 </div>
 					<img src = "./timg/a206.png">
 				</div>
 			</a>
@@ -1026,8 +1077,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a207.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> Top Kiss </div>
+					<div class = "bottom"> From Below </div>
 					<img src = "./timg/a207.png">
 				</div>
 			</a>
@@ -1035,8 +1086,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a208.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 모닝 구복 </div>
+					<div class = "bottom"> 댕그란복 </div>
 					<img src = "./timg/a208.png">
 				</div>
 			</a>
@@ -1044,8 +1095,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a209.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 동글동물구복 </div>
+					<div class = "bottom"> 댕굴 </div>
 					<img src = "./timg/a209.png">
 				</div>
 			</a>
@@ -1053,8 +1104,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a210.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 나이가 들어도 </div>
+					<div class = "bottom"> 그대의 품속이 가장 </div>
 					<img src = "./timg/a210.png">
 				</div>
 			</a>
@@ -1062,8 +1113,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a211.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 품에꼬옥 </div>
+					<div class = "bottom"> 따뜻한아침 </div>
 					<img src = "./timg/a211.png">
 				</div>
 			</a>
@@ -1071,8 +1122,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a212.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 포카치카 </div>
+					<div class = "bottom"> 치카포카쭙 </div>
 					<img src = "./timg/a212.png">
 				</div>
 			</a>
@@ -1080,8 +1131,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a213.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 키스하기 곤란한날 </div>
+					<div class = "bottom"> 곤란해요! </div>
 					<img src = "./timg/a213.png">
 				</div>
 			</a>
@@ -1089,8 +1140,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a214.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 개운한구복 </div>
+					<div class = "bottom"> 따끈쪽 </div>
 					<img src = "./timg/a214.png">
 				</div>
 			</a>
@@ -1098,8 +1149,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a215.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 기습포옹 </div>
+					<div class = "bottom"> 깜짝 </div>
 					<img src = "./timg/a215.png">
 				</div>
 			</a>
@@ -1107,8 +1158,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a216.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 우효 </div>
+					<div class = "bottom"> 지긋 </div>
 					<img src = "./timg/a216.png">
 				</div>
 			</a>
@@ -1116,8 +1167,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a217.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 걸쳐서꼬옥 </div>
+					<div class = "bottom"> 보동보동 </div>
 					<img src = "./timg/a217.png">
 				</div>
 			</a>
@@ -1125,8 +1176,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a218.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 흡입 </div>
+					<div class = "bottom"> 쭈압 </div>
 					<img src = "./timg/a218.png">
 				</div>
 			</a>
@@ -1134,8 +1185,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a219.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 부비적 </div>
+					<div class = "bottom"> 뽀작 </div>
 					<img src = "./timg/a219.png">
 				</div>
 			</a>
@@ -1143,8 +1194,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a220.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 댕굴 </div>
+					<div class = "bottom"> 댕굴댕굴 </div>
 					<img src = "./timg/a220.png">
 				</div>
 			</a>
@@ -1152,8 +1203,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a221.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> LD집사메이드 </div>
+					<div class = "bottom"> 복윤 </div>
 					<img src = "./timg/a221.png">
 				</div>
 			</a>
@@ -1161,8 +1212,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a222.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 발렌타인데이 </div>
+					<div class = "bottom"> 놀란뽁 </div>
 					<img src = "./timg/a222.png">
 				</div>
 			</a>
@@ -1170,8 +1221,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a223.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 안경쓴복이 </div>
+					<div class = "bottom"> 헤롱 </div>
 					<img src = "./timg/a223.png">
 				</div>
 			</a>
@@ -1179,8 +1230,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a224.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 아해아 </div>
+					<div class = "bottom"> 아앙 </div>
 					<img src = "./timg/a224.png">
 				</div>
 			</a>
@@ -1188,8 +1239,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a225.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 일한당 </div>
+					<div class = "bottom"> 찰딱 </div>
 					<img src = "./timg/a225.png">
 				</div>
 			</a>
@@ -1197,8 +1248,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a226.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 나른한오후 </div>
+					<div class = "bottom"> 평화로운 </div>
 					<img src = "./timg/a226.png">
 				</div>
 			</a>
@@ -1206,8 +1257,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a227.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 굹 복 </div>
+					<div class = "bottom"> 말랑볼  </div>
 					<img src = "./timg/a227.png">
 				</div>
 			</a>
@@ -1215,8 +1266,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a228.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 맬렁 </div>
+					<div class = "bottom"> 무자비하게 배를 </div>
 					<img src = "./timg/a228.png">
 				</div>
 			</a>
@@ -1224,8 +1275,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a229.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 어그레시브 구복 1 </div>
+					<div class = "bottom"> 바들바들 </div>
 					<img src = "./timg/a229.png">
 				</div>
 			</a>
@@ -1233,8 +1284,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a230.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 어그레시브 구복 2 </div>
+					<div class = "bottom"> 설정 </div>
 					<img src = "./timg/a230.png">
 				</div>
 			</a>
@@ -1242,8 +1293,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a231.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 굿복굿복 </div>
+					<div class = "bottom"> 꾸아압 </div>
 					<img src = "./timg/a231.png">
 				</div>
 			</a>
@@ -1251,8 +1302,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a232.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 뽀 </div>
+					<div class = "bottom"> 쪽 </div>
 					<img src = "./timg/a232.png">
 				</div>
 			</a>
@@ -1260,8 +1311,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a233.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 체리같은 </div>
+					<div class = "bottom"> 빨강이라 주아 </div>
 					<img src = "./timg/a233.png">
 				</div>
 			</a>
@@ -1269,8 +1320,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a234.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 어그레시브 구복 3 </div>
+					<div class = "bottom"> 무릎의자 </div>
 					<img src = "./timg/a234.png">
 				</div>
 			</a>
@@ -1278,8 +1329,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a235.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 해피복윤 </div>
+					<div class = "bottom"> 폭신 </div>
 					<img src = "./timg/a235.png">
 				</div>
 			</a>
@@ -1287,8 +1338,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a236.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 이런 꿈을 꾸었어 </div>
+					<div class = "bottom"> 지금도 꿈같아 </div>
 					<img src = "./timg/a236.png">
 				</div>
 			</a>
@@ -1296,8 +1347,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a237.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 맨살 꼬옥 </div>
+					<div class = "bottom"> 부드러움 </div>
 					<img src = "./timg/a237.png">
 				</div>
 			</a>
@@ -1305,8 +1356,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a238.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 빅복 </div>
+					<div class = "bottom"> 미니구릍 </div>
 					<img src = "./timg/a238.png">
 				</div>
 			</a>
@@ -1314,8 +1365,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a239.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> Don't Cry for me </div>
+					<div class = "bottom"> Be happy </div>
 					<img src = "./timg/a239.png">
 				</div>
 			</a>
@@ -1323,8 +1374,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a240.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 가족 </div>
+					<div class = "bottom"> 머리쥐어뜯 </div>
 					<img src = "./timg/a240.png">
 				</div>
 			</a>
@@ -1332,8 +1383,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a241.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 놀리는 복이 </div>
+					<div class = "bottom"> 그럼여! </div>
 					<img src = "./timg/a241.png">
 				</div>
 			</a>
@@ -1341,8 +1392,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a242.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 토끼덩어리구복 </div>
+					<div class = "bottom"> 토끼토끼 </div>
 					<img src = "./timg/a242.png">
 				</div>
 			</a>
@@ -1350,8 +1401,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a243.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 스타듀밸리 구복 1 </div>
+					<div class = "bottom"> 픽셀데이트 </div>
 					<img src = "./timg/a243.png">
 				</div>
 			</a>
@@ -1359,8 +1410,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a244.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 스타듀밸리 구복 2 </div>
+					<div class = "bottom"> 한집살이 </div>
 					<img src = "./timg/a244.png">
 				</div>
 			</a>
@@ -1368,8 +1419,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a245.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 쭈아압 </div>
+					<div class = "bottom"> 홀쭉 </div>
 					<img src = "./timg/a245.png">
 				</div>
 			</a>
@@ -1377,8 +1428,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a246.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 숨결 </div>
+					<div class = "bottom"> 한 새벽에 </div>
 					<img src = "./timg/a246.png">
 				</div>
 			</a>
@@ -1386,8 +1437,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a247.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 군부물 구르트&복 </div>
+					<div class = "bottom"> 구원자 </div>
 					<img src = "./timg/a247.png">
 				</div>
 			</a>
@@ -1395,8 +1446,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a248.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 절대적인 </div>
+					<div class = "bottom"> 사랑의값 </div>
 					<img src = "./timg/a248.png">
 				</div>
 			</a>
@@ -1404,8 +1455,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a249.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> Howw </div>
+					<div class = "bottom"> 구루쥬 </div>
 					<img src = "./timg/a249.png">
 				</div>
 			</a>
@@ -1413,8 +1464,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a250.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 은근 티내는중 </div>
+					<div class = "bottom"> 핫도그에 아무튼 티내는중 </div>
 					<img src = "./timg/a250.png">
 				</div>
 			</a>
@@ -1422,8 +1473,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a251.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 쪼꼬미구복 </div>
+					<div class = "bottom"> 미니미 </div>
 					<img src = "./timg/a251.png">
 				</div>
 			</a>
@@ -1431,8 +1482,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a252.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 굿모닝 </div>
+					<div class = "bottom"> 아침하다가 </div>
 					<img src = "./timg/a252.png">
 				</div>
 			</a>
@@ -1440,8 +1491,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a253.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 가까운미래 </div>
+					<div class = "bottom"> 그리고 먼미래 </div>
 					<img src = "./timg/a253.png">
 				</div>
 			</a>
@@ -1449,8 +1500,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a254.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 엘프사이 </div>
+					<div class = "bottom"> 콤그루 </div>
 					<img src = "./timg/a254.png">
 				</div>
 			</a>
@@ -1458,8 +1509,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a255.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 침대 위에 짐승 </div>
+					<div class = "bottom"> ??? </div>
 					<img src = "./timg/a255.png">
 				</div>
 			</a>
@@ -1467,8 +1518,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a256.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 복이할짝 </div>
+					<div class = "bottom"> 짭! </div>
 					<img src = "./timg/a256.png">
 				</div>
 			</a>
@@ -1476,8 +1527,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a257.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 키높이 </div>
+					<div class = "bottom"> 같은 키 </div>
 					<img src = "./timg/a257.png">
 				</div>
 			</a>
@@ -1485,8 +1536,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a258.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 말랑볼 </div>
+					<div class = "bottom"> 우웃 </div>
 					<img src = "./timg/a258.png">
 				</div>
 			</a>
@@ -1494,8 +1545,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a259.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 토끼구복 </div>
+					<div class = "bottom"> 찹 </div>
 					<img src = "./timg/a259.png">
 				</div>
 			</a>
@@ -1503,8 +1554,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a260.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 애니멀 복윤 </div>
+					<div class = "bottom"> 댕복톢윤 </div>
 					<img src = "./timg/a260.png">
 				</div>
 			</a>
@@ -1512,8 +1563,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a261.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> Shadow Bringer </div>
+					<div class = "bottom"> 구르트복 AU </div>
 					<img src = "./timg/a261.png">
 				</div>
 			</a>
@@ -1521,8 +1572,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a262.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 백허그 </div>
+					<div class = "bottom"> 꽃퐁퐁 </div>
 					<img src = "./timg/a262.png">
 				</div>
 			</a>
@@ -1530,8 +1581,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a263.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 가슴 위에 피어난 </div>
+					<div class = "bottom"> 복수초 </div>
 					<img src = "./timg/a263.png">
 				</div>
 			</a>
@@ -1539,8 +1590,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a264.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 기억을 걷는 시간 </div>
+					<div class = "bottom"> -NELL </div>
 					<img src = "./timg/a264.png">
 				</div>
 			</a>
@@ -1548,8 +1599,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a265.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 심했어요 </div>
+					<div class = "bottom"> 좀 심했어요 </div>
 					<img src = "./timg/a265.png">
 				</div>
 			</a>
@@ -1557,8 +1608,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a266.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 미니애니볼복 </div>
+					<div class = "bottom"> CUTE </div>
 					<img src = "./timg/a266.png">
 				</div>
 			</a>
@@ -1566,8 +1617,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a267.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 고양이AU 구르트복 </div>
+					<div class = "bottom"> 단모냥 장모냥 </div>
 					<img src = "./timg/a267.png">
 				</div>
 			</a>
@@ -1575,8 +1626,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a268.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 팔피리 </div>
+					<div class = "bottom"> 냅취 </div>
 					<img src = "./timg/a268.png">
 				</div>
 			</a>
@@ -1584,8 +1635,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a269.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 흡입 </div>
+					<div class = "bottom"> 내앱취 </div>
 					<img src = "./timg/a269.png">
 				</div>
 			</a>
@@ -1593,8 +1644,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a270.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 민트털댕 </div>
+					<div class = "bottom"> 뽀송 </div>
 					<img src = "./timg/a270.png">
 				</div>
 			</a>
@@ -1602,8 +1653,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a271.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 로옹복냥 </div>
+					<div class = "bottom"> 로오오오옹 </div>
 					<img src = "./timg/a271.png">
 				</div>
 			</a>
@@ -1611,8 +1662,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a272.jpg" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 애교냥이 </div>
+					<div class = "bottom"> 복덩어리 </div>
 					<img src = "./timg/a272.png">
 				</div>
 			</a>
@@ -1620,8 +1671,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a273.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 짱커요 </div>
+					<div class = "bottom"> 굹모예드 </div>
 					<img src = "./timg/a273.png">
 				</div>
 			</a>
@@ -1629,8 +1680,8 @@ GUBOK World!
 		<li>
 			<a href = "./img/a274.png" data-lightbox="mygallery">
 				<div class = "screen">
-					<div class = "top"> SD구복 </div>
-					<div class = "bottom"> 귀여워 </div>
+					<div class = "top"> 농담구르트 </div>
+					<div class = "bottom"> 진담구르트 </div>
 					<img src = "./timg/a274.png">
 				</div>
 			</a>
