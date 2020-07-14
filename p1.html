@@ -1,0 +1,122 @@
+<html>
+
+<head>
+<style type='text/css'>
+@import url("mysty2.css");
+</style>
+<link rel="stylesheet" href = "css/mysty2.css">
+<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<title> PROGRESS >> Grut Fallin Bok %365 \ </title>
+<script type="text/javascript">
+</script>
+
+</head>
+
+<body>
+
+
+<script>
+	lightbox.option({
+		'resizeDuration' : 350
+	})
+	function toggleImg1p(x) {
+		document.getElementById("img").src = "./img/a" + x + ".png";
+	}
+	function toggleImg1j(x) {
+		document.getElementById("img").src = "./img/a" + x + ".jpg";
+	}
+	function toggleImg1g(x) {
+		document.getElementById("img").src = "./img/a" + x + ".gif";
+	}
+	var fname ="";
+	var today =new Date();
+	var hh = today.getHours();
+	//alert(hh);
+		
+	if(hh>=7 && hh<=19)
+		{
+			document.body.style.background = "url('day.png') no-repeat center center/cover fixed";
+			//alert("BLACK");
+		}
+		else
+		{
+			document.body.style.background = "url('night.png') no-repeat center center/cover fixed";
+			//alert("YELLOW");
+		}
+
+	
+	function broo()
+	{
+	if(document.getElementById("bro").src.indexOf("grut1") != -1)
+	{
+	document.getElementById("bro").src = "./img/grut2.gif";
+	}
+	else if(document.getElementById("bro").src.indexOf("grut2") != -1)
+	{
+	document.getElementById("bro").src = "./img/grut1.gif";
+	}
+	}
+	
+</script>
+
+
+<div class="dbody">
+
+	<div class = "tat">
+		<a href="index.html">
+			<img src = "profile.png">
+		</a>
+	</div>
+
+
+<div class="gallerylist">
+
+	<ul>
+		<li id= "pimg1">
+			<a href="javascript:void(0);"onclick ="broo();" >
+				<img id = "bro" src = "./img/grut1.gif">
+			</a>
+		</li>
+		<li id= "ptxt1">
+			<div class="txter">
+				<p> 
+					<div class="named">이름</div>	</br>
+					<a class="secret" href="p2.html">구르트</a> </br>
+					</br>
+					<div class="named">	성격 </div></br>
+					- 예민하고 세심한 성격. 툭하면 불같이 화를 낸다 </br>
+					- 처음 부터 끝까지 계획을 짜고 그에 맞춰 행동한다. 부족한 융통성은 예비 플랜으로 해결한다 </br>
+					- 자신이 애정을 보이는 것에는 열정을 불태운다. 하지만 그것을 표현하는 것은 서투른 편 </br>
+						</br>
+					<div class="named">	특징 </div></br>
+					- <a class="secret" href="p3.html">20대</a> 후반의 나이. 키는 170 남짓, 저체중 </br>
+					- 야구르트를 정말 좋아한다. 하지만 남양 야구르트는 거른다. </br>
+					- SAVEUS 프로젝트의 팀장이자 수석 프로그래머. 세간에 알려져있지는 않지만, 재능과 실력, 꾸준함이 있다 </br>
+					- L.I.F 라는 인공지능을 개발했다 </br>
+						</br>
+					- 목표로 했던 프로젝트를 완성하기 위해 쉬지 않고 달려온 그는 자신의 정확한 신상에 대해서 알지 못한다. 단기 과거 기억 상실증으로 보여진다 </br>
+					- 스스로의 진짜 이름과 국적을 알지 못한다. 가명으로 사용된 구르트라는 이름을 사용하고 있다. </br>
+						</br>
+					- 불면증과 피로감을 항상 몸에 달고 산다. 지금은 개선중. </br>
+						</br>
+					 <VR> </br>
+					- 코 부분이 새부리처럼 살짝 튀어나온 검은색 액정의 VR을 착용한다 </br>
+					- 왼쪽 위에 배터리, 오른쪽에는 시간, 중앙에는 감정과 생각에 따라 반응하는 LED가 출력된다 </br>
+						</br>
+					- 복이라는 연인이 있다 </br>
+					- 가장 좋아하는 꽃은 복수초 </br>
+				</p>
+			</div>
+		</li>
+		<p> ⓒ 2020 Site - Com / Illustration - Com </p>
+	</ul>
+	
+	
+	</div>
+	
+</div>
+
+</body>
+
+</html>

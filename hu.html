@@ -1,0 +1,82 @@
+<html>
+
+<head>
+<style type='text/css'>
+@import url("mysty.css");
+</style>
+<link rel="stylesheet" href = "css/mysty.css">
+<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<title> PROGRESS >> Grut Fallin Bok %365 \ </title>
+<script type="text/javascript">
+	var hour = function() {
+		var fname ="";
+		var today =new Date();
+		var hh = today.getHours();
+		if(hh>=7 && hh<=17)
+		{
+			fname="black";
+			alert("BLACK");
+		}
+		else
+		{
+			fname="yellow";
+			alert("YELLOW");
+		}
+		
+		document.getElementById("dayknow").style.background-color: fname;
+	}
+</script>
+
+</head>
+
+<body>
+
+
+<script>
+	lightbox.option({
+		'resizeDuration' : 350
+	})
+	function toggleImg1p(x) {
+		document.getElementById("img").src = "./img/a" + x + ".png";
+	}
+	function toggleImg1j(x) {
+		document.getElementById("img").src = "./img/a" + x + ".jpg";
+	}
+	function toggleImg1g(x) {
+		document.getElementById("img").src = "./img/a" + x + ".gif";
+	}
+	var fname ="";
+	var today =new Date();
+	var hh = today.getHours();
+	//alert(hh);
+		
+	if(hh>=7 && hh<=19)
+		{
+			document.body.style.background = "url('day.png') no-repeat center center/cover fixed";
+			//alert("BLACK");
+		}
+		else
+		{
+			document.body.style.background = "url('night.png') no-repeat center center/cover fixed";
+			//alert("YELLOW");
+		}
+	
+</script>
+
+
+
+
+<div class="dbody">
+
+	</br>
+	<a href="index.html">
+	<img class="hugi" src="./img/hugi.png"></img>
+	</a>
+	</br>
+	</br>
+</div>
+
+</body>
+
+</html>

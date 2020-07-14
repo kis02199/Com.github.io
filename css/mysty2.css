@@ -1,0 +1,103 @@
+
+@font-face{
+	font-family:NanumGothic;
+	src:url("NanumGothic.tff");
+}
+
+body {
+	background:url() no-repeat center center fixed;
+	width:100%;
+	height:100%;}
+
+.dayknow {
+	background-color: ivory;
+}
+
+.dbody{
+	width:100%;
+	height:100%;
+	text-align:center;
+	/*overflow-y:scroll;*/
+	
+}
+
+.tat a > img{
+	padding-top:1%;
+	text-align:center;
+	width:auto;
+	max-width:80%;
+}
+
+.gallerylist {
+	max-width:1200px;
+	width:90%;
+	margin:0 auto;
+	padding-top:3%;
+	padding-bottom:3%;
+}
+
+ul {
+	height:65%;}
+
+ul > li {
+	display:inline-block;
+	vertical-align:center;
+	text-align:center;
+	position : relative;
+	overflow : auto;
+}
+
+ul > #pimg1{
+	display:inline-block;
+	background-color : rgba( 255, 255, 255, 0.5);
+	width:35%;
+	height:100%;
+}
+
+ul > #ptxt1{
+	display:inline-block;
+	background-color : rgba( 255, 255, 255, 0.5);
+	width:60%;
+	height:100%;
+}
+
+ul > li > a img{
+	position : absolute;
+	max-height : 100%;
+	max-width : 100%;
+	width : auto;
+	height : auto;
+	margin : auto;
+	top : 0;
+	bottom : 0;
+	left : 0;
+	right : 0;
+}
+
+.txter {
+	width : 100%;
+	height : 100%;
+	font-family:NanumGothic;
+}
+
+.secret:link {
+	text-decoration : none;
+	color : black;
+}
+
+.secret:visited {
+	text-decoration : none;
+	color : black;
+}
+
+.named {
+	font-size:14pt;
+	font-weight:bold;
+}
+
+
+
+
+
+
+

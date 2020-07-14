@@ -1,0 +1,116 @@
+<html>
+
+<head>
+<style type='text/css'>
+@import url("mysty2.css");
+</style>
+<link rel="stylesheet" href = "css/mysty2.css">
+<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<title> PROGRESS >> Grut Fallin Bok %365 \ </title>
+<script type="text/javascript">
+</script>
+
+</head>
+
+<body>
+
+
+<script>
+	lightbox.option({
+		'resizeDuration' : 350
+	})
+	function toggleImg1p(x) {
+		document.getElementById("img").src = "./img/a" + x + ".png";
+	}
+	function toggleImg1j(x) {
+		document.getElementById("img").src = "./img/a" + x + ".jpg";
+	}
+	function toggleImg1g(x) {
+		document.getElementById("img").src = "./img/a" + x + ".gif";
+	}
+	var fname ="";
+	var today =new Date();
+	var hh = today.getHours();
+	//alert(hh);
+		
+	if(hh>=7 && hh<=19)
+		{
+			document.body.style.background = "url('day.png') no-repeat center center/cover fixed";
+			//alert("BLACK");
+		}
+		else
+		{
+			document.body.style.background = "url('night.png') no-repeat center center/cover fixed";
+			//alert("YELLOW");
+		}
+		
+
+	function broo()
+	{
+	if(document.getElementById("bro").src.indexOf("grut1") != -1)
+	{
+	document.getElementById("bro").src = "./img/grut2.gif";
+	}
+	else if(document.getElementById("bro").src.indexOf("grut2") != -1)
+	{
+	document.getElementById("bro").src = "./img/grut1.gif";
+	}
+	}
+	
+</script>
+
+
+<div class="dbody">
+
+	<div class = "tat">
+		<a href="index.html">
+			<img src = "profile.png">
+		</a>
+	</div>
+
+
+<div class="gallerylist">
+
+	<ul>
+		<li id= "pimg1">
+			<a href="javascript:void(0);"onclick ="broo();" >
+				<img id = "bro" src = "./img/yun.png">
+			</a>
+		</li>
+		<li id= "ptxt1">
+			<div class="txter">
+				<p> 
+					<div class="named">이름</div>	</br>
+					<a class="secret" href="p1.html">서 윤</a> </br>
+					</br>
+					<div class="named">	성격 </div></br>
+					- 순수하고 밝은 성격. 때로는 너무 순진해서 바보 같아 보일 수도 있다 </br>
+					- 나름 열심히 계획을 짜고 행동하지만 잘 짜지지 않아 행동으로 먼저 나서는 편. 중요한 일은 항상 달력에 적어둔다 </br>
+					- 표현하고 말하는 것을 좋아하는 사람. 그렇게 돌아오는 반응 하나하나에 진심으로 기뻐한다 </br>
+						</br>
+					<div class="named">	특징 </div></br>
+					- 20대 초반의 나이. 키는 165 남짓 표준체중+2 </br>
+					- 먹는 것을 정말 좋아한다. 다른 사람들 보다 배로 먹는 편 </br>
+					- 국문학과에서 공부하고 있으며, 사람들이 보면 행복해지는 글을 쓰는 것을 꿈으로 두고 있다. 시를 쓰는 것도 굉장히 좋아해서, 선물에는 항상 직접 쓴 시를 동봉한다 </br>
+					- 책 읽는 것과 무당벌레를 좋아한다. 환생이나 전생같은 환상같은 일을 믿는다 </br>
+					- 남들이 모르게 집에서는 SNS 및 서브컬쳐 활동을 열심히 한다. 코스프레를 한창 했던 때가 있다</br>
+						</br>
+					- 눈에 띄지는 않지만 살집이 있는 편. 그래도 건강하게 운동과 요가를 병행하고 있다 </br>
+						</br>
+					- 지복이라는 남자친구가 있다</br>
+					- 가장 좋아하는 꽃은 복수초</br>
+				</p>
+			</div>
+		</li>
+		<p> ⓒ 2020 Site - Com / Illustration - Com </p>
+	</ul>
+	
+	
+	</div>
+	
+</div>
+
+</body>
+
+</html>

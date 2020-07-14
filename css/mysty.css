@@ -6,6 +6,8 @@ body {
 	width:100%;
 	height:100%;}
 
+
+
 .dayknow {
 	background-color: ivory;
 }
@@ -29,7 +31,17 @@ body {
 	max-width:1200px;
 	width:90%;
 	margin:0 auto;
-	padding-top:20%;
+	padding-top:9%;
+}
+
+.ya{
+	width:100%;
+}
+
+.ya a > img{
+	text-align:center;
+	width:15%;
+	margin-bottom:8%;
 }
 
 ul {font-size:0;}
