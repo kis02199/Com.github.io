@@ -1,0 +1,121 @@
+<html>
+
+<head>
+<style type='text/css'>
+@import url("mysty2.css");
+</style>
+<link rel="stylesheet" href = "css/mysty2.css">
+<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<title> PROGRESS >> Grut Fallin Bok %365 \ </title>
+<script type="text/javascript">
+</script>
+
+</head>
+
+<body>
+
+
+<script>
+	lightbox.option({
+		'resizeDuration' : 350
+	})
+	function toggleImg1p(x) {
+		document.getElementById("img").src = "./img/a" + x + ".png";
+	}
+	function toggleImg1j(x) {
+		document.getElementById("img").src = "./img/a" + x + ".jpg";
+	}
+	function toggleImg1g(x) {
+		document.getElementById("img").src = "./img/a" + x + ".gif";
+	}
+	var fname ="";
+	var today =new Date();
+	var hh = today.getHours();
+	//alert(hh);
+		
+	if(hh>=7 && hh<=19)
+		{
+			document.body.style.background = "url('day.png') no-repeat center center/cover fixed";
+			//alert("BLACK");
+		}
+		else
+		{
+			document.body.style.background = "url('night.png') no-repeat center center/cover fixed";
+			//alert("YELLOW");
+		}
+
+	
+	function broo()
+	{
+	if(document.getElementById("bro").src.indexOf("bok1") != -1)
+	{
+	document.getElementById("bro").src = "./img/bok2.png";
+	}
+	else if(document.getElementById("bro").src.indexOf("bok2") != -1)
+	{
+	document.getElementById("bro").src = "./img/bok1.png";
+	}
+	}
+	
+</script>
+
+
+<div class="dbody">
+
+	<div class = "tat">
+		<a href="home.html">
+			<img src = "profile.png">
+		</a>
+	</div>
+
+
+<div class="gallerylist">
+
+	<ul>
+		<li id= "pimg1">
+			<a href="javascript:void(0);"onclick ="broo();" >
+				<img id = "bro" src = "./img/bok1.png">
+			</a>
+		</li>
+		<li id= "ptxt1">
+			<div class="txter">
+				<p> 
+					<div class="named">이름</div>	</br>
+					<a class="secret" href="a3.html">복이</a> </br>
+					</br>
+					<div class="named">	성격 </div></br>
+					- 붙임성 좋은 분위기 메이커 타입.</br>
+					- 좋든 나쁘든 감정이 격해지면 리액션이 크게 과장되는 편이다. 이럴 땐 곧잘 시끄러워지곤 한다…</br>
+					- 한 번 목표로 정한 것은 쉽게 놓지 않는 근성인.</br>
+					- 호기심을 참지 못하는 편.</br>
+						</br>
+					<div class="named">	특징 </div></br>
+					- <a class="secret" href="a2.html">20대</a> 중반에 키는 170 남짓. 평균 체중.</br>
+					</br>
+					- 복이가 어릴 적부터 지금의 나이가 될 때까지 운영해온 치킨집이 거의 가족 모두의 가업이나 마찬가지.- 튀김요리만큼은 최고로 잘 할 수 있다! </br>
+					- 오토바이 면허도 있다. 배달 도와야 하니까.</br>
+					</br>
+					- 취미가 음악과 게임인 휴학생. 원래라면 음악 쪽으로 진로를 잡을 예정이었으나….</br>
+					</br>
+					- 스스로가 현실에 존재하는 인간이 아닌 인공지능이라는 사실에 여태까지의 기억들을 부정 당해 크게 충격을 받았지만, 지금은 인간이 아니더라도 자신을 이루는 것들이 거짓이 되지는 않는다고 생각하고 있다.</br>
+					</br>
+					- 실루엣이 게임패드 같은 모양의 VR을 착용한다.</br>
+					- 주로 자신의 목소리에 반응하는 파형 LED가 출력된다.</br>
+					</br>
+					- 구르트라는 이름의 연인이 있다.</br>
+					- 가장 좋아하는 꽃은 복수초.</br>
+				</p>
+			</div>
+		</li>
+		<p> ⓒ 2020 Site - Com / Illustration - AK </p>
+	</ul>
+	
+	
+	</div>
+	
+</div>
+
+</body>
+
+</html>

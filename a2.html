@@ -1,0 +1,118 @@
+<html>
+
+<head>
+<style type='text/css'>
+@import url("mysty2.css");
+</style>
+<link rel="stylesheet" href = "css/mysty2.css">
+<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<title> PROGRESS >> Grut Fallin Bok %365 \ </title>
+<script type="text/javascript">
+</script>
+
+</head>
+
+<body>
+
+
+<script>
+	lightbox.option({
+		'resizeDuration' : 350
+	})
+	function toggleImg1p(x) {
+		document.getElementById("img").src = "./img/a" + x + ".png";
+	}
+	function toggleImg1j(x) {
+		document.getElementById("img").src = "./img/a" + x + ".jpg";
+	}
+	function toggleImg1g(x) {
+		document.getElementById("img").src = "./img/a" + x + ".gif";
+	}
+	var fname ="";
+	var today =new Date();
+	var hh = today.getHours();
+	//alert(hh);
+		
+	if(hh>=7 && hh<=19)
+		{
+			document.body.style.background = "url('day.png') no-repeat center center/cover fixed";
+			//alert("BLACK");
+		}
+		else
+		{
+			document.body.style.background = "url('night.png') no-repeat center center/cover fixed";
+			//alert("YELLOW");
+		}
+
+	
+	function broo()
+	{
+	if(document.getElementById("bro").src.indexOf("grut1") != -1)
+	{
+	document.getElementById("bro").src = "./img/grut2.gif";
+	}
+	else if(document.getElementById("bro").src.indexOf("grut2") != -1)
+	{
+	document.getElementById("bro").src = "./img/grut1.gif";
+	}
+	}
+	
+</script>
+
+
+<div class="dbody">
+
+	<div class = "tat">
+		<a href="home.html">
+			<img src = "profile.png">
+		</a>
+	</div>
+
+
+<div class="gallerylist">
+
+	<ul>
+		<li id= "pimg1">
+			<a href="javascript:void(0);"onclick ="broo();" >
+				<img id = "bro" src = "./img/oldbok.png">
+			</a>
+		</li>
+		<li id= "ptxt1">
+			<div class="txter">
+				<p> 
+					<div class="named">이름</div>	</br>
+					복이 </br>
+					</br>
+					<div class="named">	성격 </div></br>
+					- 붙임성 좋은 분위기 메이커 타입. </br>
+					- 시원시원한 성격에 누구에게나 친절하다. </br>
+					- 언뜻 몸이 먼저 나가는 것처럼 보이지만, 도전적인 성향이 강할 뿐이고 행동하기 전에 침착하게 생각하는 편이다. 호기심이 앞서던 예전보다는 그렇다. </br>
+						</br>
+					<div class="named">	특징 </div></br>
+					- <a class="secret" href="a1.html">50대</a> 중반에 키는 170 남짓. 평균 체중-1. </br>
+					- 구조대에서 은퇴하고 바다 앞에 지은 집에서 가족과 함께 시간을 보내고 있다. </br>
+					- 여전히 오토바이를 타고 다닌다. </br>
+						</br>
+					- 항상 손에 청록색 반지를 끼고 다닌다. 빼는 일이 거의 없어보인다. </br>
+						</br>
+					- 비록 가상세계에 존재하는 인공지능일지라도 현실세계의 사람과 다름없이 나이 들고 함께 살아간다. 자신과 같은 길을 걷기로 한 이곳의 신과 함께. </br>
+						</br>
+					- 구르트라는 이름의 남편이 있다. </br>
+					- 원, 유리아라는 이름의 쌍둥이 자녀가 있다. </br>
+					- 가장 좋아하는 꽃은 복수초. </br>
+
+				</p>
+			</div>
+		</li>
+		<p> ⓒ 2020 Site - Com / Illustration - AK </p>
+	</ul>
+	
+	
+	</div>
+	
+</div>
+
+</body>
+
+</html>

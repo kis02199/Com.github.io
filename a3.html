@@ -1,0 +1,119 @@
+<html>
+
+<head>
+<style type='text/css'>
+@import url("mysty2.css");
+</style>
+<link rel="stylesheet" href = "css/mysty2.css">
+<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<title> PROGRESS >> Grut Fallin Bok %365 \ </title>
+<script type="text/javascript">
+</script>
+
+</head>
+
+<body>
+
+
+<script>
+	lightbox.option({
+		'resizeDuration' : 350
+	})
+	function toggleImg1p(x) {
+		document.getElementById("img").src = "./img/a" + x + ".png";
+	}
+	function toggleImg1j(x) {
+		document.getElementById("img").src = "./img/a" + x + ".jpg";
+	}
+	function toggleImg1g(x) {
+		document.getElementById("img").src = "./img/a" + x + ".gif";
+	}
+	var fname ="";
+	var today =new Date();
+	var hh = today.getHours();
+	//alert(hh);
+		
+	if(hh>=7 && hh<=19)
+		{
+			document.body.style.background = "url('day.png') no-repeat center center/cover fixed";
+			//alert("BLACK");
+		}
+		else
+		{
+			document.body.style.background = "url('night.png') no-repeat center center/cover fixed";
+			//alert("YELLOW");
+		}
+
+	
+	function broo()
+	{
+	if(document.getElementById("bro").src.indexOf("bok1") != -1)
+	{
+	document.getElementById("bro").src = "./img/bok2.png";
+	}
+	else if(document.getElementById("bro").src.indexOf("bok2") != -1)
+	{
+	document.getElementById("bro").src = "./img/bok1.png";
+	}
+	}
+	
+</script>
+
+
+<div class="dbody">
+
+	<div class = "tat">
+		<a href="home.html">
+			<img src = "profile.png">
+		</a>
+	</div>
+
+
+<div class="gallerylist">
+
+	<ul>
+		<li id= "pimg1">
+			<a href="javascript:void(0);"onclick ="broo();" >
+				<img id = "bro" src = "./img/jibok.png">
+			</a>
+		</li>
+		<li id= "ptxt1">
+			<div class="txter">
+				<p> 
+					<div class="named">이름</div>	</br>
+					<a class="secret" href="a1.html">지 복</a></br>
+					</br>
+					</br>
+					<div class="named">	성격 </div></br>
+					- 사근사근하고 다정한 성격. </br>
+					- 남이 말을 걸기 전까지는 말수가 적은 편. 말주변이 없는 것은 아니고, 순전히 먼저 말을 안 하는 것 뿐이다. </br>
+					- 감정이 격해지면 겉으로는 티내지 않으면서 머릿속은 뒤죽박죽이 되어서는 고장나버린다. </br>
+						</br>
+					<div class="named">	특징 </div></br>
+					- 20대 중반에 키는 180 남짓.</br>
+					- 실용음악과에서 공부하는 학생. 개인 영상채널에 자신이 작곡한 노래를 업로드 해서 제법 많은 구독자를 가지고 있는 업로더이기도 하다. </br>
+					</br>
+					- 적은 말수에 얌전한 인상에도 불구하고, 생판 모르는 남이 보기에는 친구도 많고 어딜 가든 꼭 끼어있는 기묘한 사람. 행보 자체는 외향인에 가깝다.</br>
+					</br>
+					- 전생이나 환생 같은 것들은 믿지 않았지만, 최근에는 윤이 덕에 어쩌면…… 하고 생각하고 있는 것 같다.</br>
+						</br>
+					- 위와 마찬가지의 이유로 서정적인 노래를 부쩍 많이 쓰게 되었다.</br>
+					</br>
+					- 서윤이라는 이름의 여자친구가 있다.</br>
+					- 가장 좋아하는 꽃은 복수초.</br>
+
+				</p>
+			</div>
+		</li>
+		<p> ⓒ 2020 Site - Com / Illustration - AK </p>
+	</ul>
+	
+	
+	</div>
+	
+</div>
+
+</body>
+
+</html>
